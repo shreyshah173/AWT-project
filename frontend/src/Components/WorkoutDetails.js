@@ -20,8 +20,10 @@ const WorkoutDetails = (workout) => {
             <div className="card mt-1 ms-3">
                 <div className="card-body">
                     <h3 className="card-title primaryColour">{workout.title}</h3>
-                    <p className="card-text">Load: {workout.load} kgs</p>
-                    <p className="card-text">Reps: {workout.reps}</p>
+                    {workout.load && 
+                    <p className="card-text">stars: {workout.load} star</p>
+                    }
+                    <p className="card-text">price: ${workout.reps}</p>
                     <button onClick={handleClick}>delete</button>
                 </div>
             </div>

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import WorkoutDetails from '../Components/WorkoutDetails';
+import WorkoutDetails from './WorkoutDetails';
 import { useWorkoutContext } from '../Hooks/useWorkoutContext';
-// import Services from '../MyMeals/Services';
+import Services from '../MyMeals/Services';
 
-const Workouts = () => {
+const Available = () => {
   const { workouts, dispatch } = useWorkoutContext();
   useEffect(() => {
     const fetchWorkouts = async () => {
@@ -20,14 +20,14 @@ const Workouts = () => {
 
   return (
     <>
-      {/* <Services /> */}
+      <Services />
       <div className="row">{workouts && workouts.map((workout) => {
         return <><WorkoutDetails key={workout._id} {...workout} /></>
       })}</div>
     </>
   )
 }
-export default Workouts;
+export default Available;
 
 // import React, { useEffect } from 'react';
 // import WorkoutDetails from '../Components/WorkoutDetails';

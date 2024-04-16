@@ -1,0 +1,239 @@
+/* body{
+    background-color:#ded1d1 ;
+} */
+#navbar{
+    top: -10px;
+    right: -20px;
+    left: -10px;
+    margin-top: -150px;
+    padding-top: 18px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    width: 1520px;
+    /* height: 10%; */
+    /* width: 110%; */
+    /* z-index: -1; */
+    opacity: 0.7 ;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+#navbar ul li a{
+    color: white;
+    /* margin-bottom: 10px; */
+    padding: 10px 19px 10px 19px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: #000000;
+    background-color: white;
+    opacity: 1;
+    padding: 10px 19px ;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.item1{
+
+    padding: 10px 10px 10px 579px ;
+}
+/* logo */
+#logo{
+    margin: 0px 3px ;
+}
+#logo img{
+    height: 66px;
+    width: 69px;
+    margin: 0px 27px 7px 37px;
+}
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 707px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('./photo_2.JPG') no-repeat center center/cover;
+    height: 708px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#home2 {
+    padding: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* z-index: 2; */
+}
+#home h1{
+    font-size: 3.5rem;
+    padding: 10px;
+}
+#home p{
+    font-size: 1.3rem;
+}
+.btn{
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+.btn:hover{
+    color: #000000;
+    background-color: azure;
+}
+
+/* services */
+.pizza-img{
+    display: block;    
+    margin: 43px auto 34px auto;
+    height: 120px;
+    width: 120px;
+}
+.plate-img{
+    display: block;
+    margin: 43px auto 34px auto;
+    height: 120px;
+    width: 120px;
+}
+.delivery-img{
+    display: block;
+    margin: 43px auto 34px auto;
+    height: 120px;
+    width: 120px;
+}
+
+/* fuck this */
+
+.card-deck{
+    padding: 26px 100px 10px 100px;
+}
+#pricing {
+    text-align: center;
+}
+.pricing1 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.pricing1 h1{
+    font-size: 2.8rem;
+}
+.card{
+    border: 2px solid red;
+    border-radius:10px ;
+    padding: 10px 10px 10px 10px;
+}
+.card p{
+    font-size: 20px;
+}
+.card-header{
+    border: none;
+}
+.card-body{
+    padding-bottom: 42px;
+}
+
+/* clients */
+#partner{
+    margin: 104px;
+    text-align: center;
+    /* width: 100%; */
+}
+
+#heading{
+    background: #eed6d6;
+}
+
+#partner .client-items1 img ,#partner .client-items2 img{
+    height: 100px;
+    width: 100px;
+}
+
+.symbols{
+    display:flex;
+    
+}
+
+.client-items1 , .client-items2 {
+    /* float: left; */
+    width: 50%;
+    margin: 0;
+    padding: 2% auto;
+}
+/* #partner .client-items1{
+    padding: 10px 10px 10px 10px;
+    padding-left:426px;
+    padding-top:36px;
+}
+#partner .client-items2{
+    padding-left:245px;
+    padding-top:26px;    
+} */
+/* SignUp form */
+
+#SignUp{
+    padding: 5% 12%;
+    margin: 0 ;
+    
+    /* width: 70%; */
+    /* width:100px; */
+}
+
+.full{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid  rgb(236, 153, 8);
+    border-radius: 10px;
+    padding: 1.1rem;
+}
+
+.signup-para h1{
+    margin: 0 0 5%;
+}
+
+
+.half{
+    width: 50%;
+    padding: 1% 7%;
+}
+
+form{
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    padding: 1% 2%;
+    margin: 0 0 3%;
+    border: solid 1px;
+    border-color: rgb(236, 153, 8);
+    color: rgb(236, 153, 8);
+}
+
+.btn1{
+    background-color: rgb(236, 153, 8);
+    color: #fff;
+    border: none;
+    
+}
+
+#footer{
+    text-align: center;
+}

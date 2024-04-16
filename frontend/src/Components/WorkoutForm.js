@@ -33,17 +33,17 @@ const WorkoutForm = () => {
             setLoad(0);
             console.log('new workout added', json);
         }
-         
+        window.location.reload();    
     }
 
     return (
         <>
             <div className="container">
-                <h2>WorkoutForm</h2>
+                <h2>Add Item</h2>
                 <form onSubmit={handleSubmit} className="my-form">
                     <div className="form-group row">
                         <label htmlFor="exercise" className="col-sm-3 col-form-label">
-                            Name of the exercise*
+                            Name of the dish*
                         </label>
                         <div className="col-sm-9">
                             <input
@@ -51,7 +51,7 @@ const WorkoutForm = () => {
                                 // className="form-control custom-input"
                                 className={emptyFields.includes('title') ? 'error form-control custom-input' : 'form-control custom-input'}
                                 id="exercise"
-                                placeholder="Exercise"
+                                placeholder=""
                                 onChange={(e) => setTitle(e.target.value)}
                                 value={title}
                             />
@@ -59,14 +59,14 @@ const WorkoutForm = () => {
                     </div>
                     <div className="form-group row">
                         <label htmlFor="loads" className="col-sm-3 col-form-label">
-                            Loads (in Kg)
+                            Stars
                         </label>
                         <div className="col-sm-9">
                             <input
                                 type="number"
                                 className="form-control custom-input"
                                 id="loads"
-                                placeholder="Loads"
+                                placeholder=""
                                 onChange={(e) => setLoad(e.target.value)}
                                 value={load}
                             />
@@ -74,7 +74,7 @@ const WorkoutForm = () => {
                     </div>
                     <div className="form-group row">
                         <label htmlFor="reps" className="col-sm-3 col-form-label">
-                            Reps*
+                            Price*
                         </label>
                         <div className="col-sm-9 mt-2">
                             <input
@@ -82,7 +82,7 @@ const WorkoutForm = () => {
                                 // className="form-control custom-input"
                                 className={emptyFields.includes('title') ? 'error form-control custom-input' : 'form-control custom-input'}
                                 id="reps"
-                                placeholder="Reps"
+                                placeholder=""
                                 onChange={(e) => setReps(e.target.value)}
                                 value={reps}
                             />
